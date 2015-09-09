@@ -18,4 +18,12 @@ describe('isPalindrome', function() {
     it("handles Costner palindrome", function() {
         expect(isPalindrome("Sis, ask Costner to not rent socks 'as is.'")).to.equal(true);
     });
+
+    it("handles number palindromes", function() {
+        expect(isPalindrome("9090909")).to.equal(true);
+    });
+
+    it("handles random crap", function() {
+        expect(isPalindrome("asdjfklasjdfff   gaherguaertyTYERRUTURTU")).to.equal(false);
+    });
 });
