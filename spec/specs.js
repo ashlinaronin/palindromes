@@ -16,6 +16,6 @@ describe('isPalindrome', function() {
     });
 
     it("handles Costner palindrome", function() {
-        expect(isPalindrome("Sis, ask Costner to not rent socks 'as is.'"));
+        expect(isPalindrome("Sis, ask Costner to not rent socks 'as is.'")).to.equal(true);
     });
 });
